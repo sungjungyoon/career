@@ -1,6 +1,6 @@
 ---
-title: "Deploy checklist CLI"
-summary: "Wrapped repeated deploy steps into one command to reduce mistakes and time."
+title: "배포 체크리스트 자동화 CLI"
+summary: "반복되는 배포 절차를 명령어 하나로 표준화해 시간과 실수를 줄인 도구입니다."
 date: "2024-11-02"
 tags:
   - Node.js
@@ -11,11 +11,11 @@ featured: false
 order: 10
 ---
 
-## Overview
+## 개요
 
-Encoded the pre-deploy checklist (env vars, build flags) into a small Node CLI used by the team.
+배포 전 점검 항목(환경 변수, 빌드 플래그 등)을 Node.js CLI로 자동화해 팀 공통 도구로 사용했습니다.
 
-## Implementation
+## 구현 내용
 
-- `commander` for subcommands and help text
-- Unit tests around the riskiest parsing paths
+- `commander` 기반 서브커맨드 구조 설계
+- 오류 가능성이 높은 파싱 경로 중심 단위 테스트 작성

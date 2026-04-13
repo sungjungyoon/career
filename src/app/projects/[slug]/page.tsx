@@ -34,7 +34,7 @@ export default async function ProjectDetailPage({ params }: Props) {
         href="/projects"
         className="text-sm font-medium text-sky-600 hover:text-sky-500 dark:text-sky-400"
       >
-        ← All projects
+        ← 전체 프로젝트
       </Link>
       <header className="mt-6 border-b border-neutral-200 pb-8 dark:border-neutral-800">
         <p className="text-sm text-muted">
@@ -62,7 +62,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               target="_blank"
               rel="noreferrer"
             >
-              Live demo
+              데모 보기
             </a>
           ) : null}
           {project.frontmatter.repo ? (
@@ -72,7 +72,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               target="_blank"
               rel="noreferrer"
             >
-              Repository
+              저장소
             </a>
           ) : null}
         </div>
@@ -83,7 +83,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       {siblings.length > 0 ? (
         <aside className="mt-16 border-t border-neutral-200 pt-10 dark:border-neutral-800">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">
-            More projects
+            다른 프로젝트
           </h2>
           <ul className="mt-4 space-y-2 text-sm">
             {siblings.slice(0, 5).map((p) => (

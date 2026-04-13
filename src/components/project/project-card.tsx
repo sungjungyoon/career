@@ -8,12 +8,12 @@ type Props = {
 
 export function ProjectCard({ slug, frontmatter }: Props) {
   return (
-    <article className="group flex flex-col rounded-2xl border border-neutral-200/90 bg-card p-5 shadow-sm transition hover:border-neutral-300 hover:shadow-md dark:border-neutral-800 dark:bg-neutral-950/40 dark:hover:border-neutral-600">
+    <article className="group flex flex-col rounded-3xl border border-black/6 bg-card/90 p-6 shadow-[0_12px_40px_-20px_rgba(0,0,0,0.25)] backdrop-blur-md transition hover:-translate-y-0.5 hover:shadow-[0_20px_50px_-24px_rgba(0,0,0,0.35)] dark:border-white/10 dark:bg-neutral-900/55 dark:shadow-black/40 dark:hover:border-white/15">
       <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
         <time dateTime={frontmatter.date}>{frontmatter.date}</time>
         {frontmatter.featured ? (
           <span className="rounded-full bg-sky-500/15 px-2 py-0.5 font-medium text-sky-700 dark:text-sky-300">
-            Featured
+            주요
           </span>
         ) : null}
       </div>
@@ -47,7 +47,7 @@ export function ProjectCard({ slug, frontmatter }: Props) {
             rel="noreferrer"
             className="text-muted underline-offset-4 hover:text-foreground hover:underline"
           >
-            Demo
+            데모
           </a>
         ) : null}
         {frontmatter.repo ? (
@@ -57,7 +57,7 @@ export function ProjectCard({ slug, frontmatter }: Props) {
             rel="noreferrer"
             className="text-muted underline-offset-4 hover:text-foreground hover:underline"
           >
-            Repo
+            저장소
           </a>
         ) : null}
       </div>

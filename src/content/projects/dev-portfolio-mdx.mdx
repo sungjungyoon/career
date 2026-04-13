@@ -1,6 +1,6 @@
 ---
-title: "Developer portfolio (Next.js + MDX)"
-summary: "Career doc + project pages sourced from MDX with App Router, Tailwind, and dark mode."
+title: "개발 포트폴리오 사이트 (Next.js + MDX)"
+summary: "경력 기술서와 프로젝트 문서를 MDX로 관리하고, App Router + Tailwind 다크 모드를 적용한 포트폴리오입니다."
 date: "2026-04-13"
 tags:
   - Next.js
@@ -12,16 +12,17 @@ featured: true
 order: 0
 ---
 
-## Structure
+## 구조
 
-- `src/content/career.mdx` — narrative resume
-- `src/content/projects/*.mdx` — one file per project (frontmatter + long-form body)
+- `src/content/career.mdx` — 경력 기술서 본문
+- `src/content/projects/*.mdx` — 프로젝트별 문서(frontmatter + 상세 설명)
 
-## Why MDX
+## MDX를 사용한 이유
 
-Markdown is great for prose; JSON is rigid for long text. MDX sits in the middle: structured metadata **and** rich content in one place.
+Markdown은 서술형 문서에 강하고, JSON은 구조화에 강합니다.  
+MDX는 이 둘의 장점을 가져와 메타데이터와 상세 본문을 한 파일에서 관리할 수 있습니다.
 
-## Next steps
+## 확장 계획
 
-- Add optional `coverImage` per project
-- Generate Open Graph images per route
+- 프로젝트별 `coverImage` 필드 추가
+- 라우트별 Open Graph 이미지 자동 생성
