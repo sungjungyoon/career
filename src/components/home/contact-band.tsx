@@ -39,7 +39,7 @@ export function ContactBand({ profile }: Props) {
               GitHub {"\uc5f4\uae30"}
             </a>
           ) : null}
-          {profile.linkedin ? (
+          {/* {profile.linkedin ? (
             <a
               href={profile.linkedin}
               target="_blank"
@@ -48,7 +48,7 @@ export function ContactBand({ profile }: Props) {
             >
               LinkedIn
             </a>
-          ) : null}
+          ) : null} */}
         </div>
       </div>
     </section>
