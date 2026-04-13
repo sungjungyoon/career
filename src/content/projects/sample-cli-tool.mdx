@@ -1,0 +1,21 @@
+---
+title: "Deploy checklist CLI"
+summary: "Wrapped repeated deploy steps into one command to reduce mistakes and time."
+date: "2024-11-02"
+tags:
+  - Node.js
+  - CLI
+repo: ""
+demo: ""
+featured: false
+order: 10
+---
+
+## Overview
+
+Encoded the pre-deploy checklist (env vars, build flags) into a small Node CLI used by the team.
+
+## Implementation
+
+- `commander` for subcommands and help text
+- Unit tests around the riskiest parsing paths
