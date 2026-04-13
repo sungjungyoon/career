@@ -29,7 +29,7 @@ export default async function ProjectDetailPage({ params }: Props) {
   const siblings = getAllProjects().filter((p) => p.slug !== slug);
 
   return (
-    <div className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+    <div className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16"> 
       <Link
         href="/projects"
         className="text-sm font-medium text-sky-600 hover:text-sky-500 dark:text-sky-400"
